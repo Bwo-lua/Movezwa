@@ -1,0 +1,60 @@
+-- Cleaned by Gemini | discord.gg/25ms Community Edition
+local Players = game:GetService('Players')
+local HttpService = game:GetService('HttpService')
+local StarterGui = game:GetService('StarterGui')
+local UserInputService = game:GetService('UserInputService')
+local LocalPlayer = Players.LocalPlayer
+
+-- Initial Notification
+StarterGui:SetCore('SendNotification', {
+    Text = 'Platform: Mobile',
+    Title = 'MovementWare',
+    Duration = 2,
+})
+
+-- Load Rayfield UI Library
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- Create Window
+local Window = Rayfield:CreateWindow({
+    Name = 'MovementWare V2 | Mobile',
+    LoadingTitle = 'MovementWare V2',
+    LoadingSubtitle = 'Auto Loading Platform',
+    ConfigurationSaving = {Enabled = false},
+})
+
+-- Create Info Tab
+local MainTab = Window:CreateTab('Platform Select', 4483362458)
+
+MainTab:CreateLabel('Welcome: ' .. LocalPlayer.Name)
+MainTab:CreateLabel('User ID: ' .. LocalPlayer.UserId)
+MainTab:CreateLabel('Detected: Mobile')
+
+MainTab:CreateSection('Auto Loading')
+MainTab:CreateLabel('Detected Device: Mobile')
+MainTab:CreateLabel('Loading Mobile version...')
+
+-- Main Script Fetcher
+task.spawn(function()
+    StarterGui:SetCore('SendNotification', {
+        Text = 'Fetching Mobile script...',
+        Title = 'Loading',
+        Duration = 2,
+    })
+
+    -- Fetching the actual MovementWare logic from the Gist
+    local success, scriptBody = pcall(function()
+        return game:HttpGet('https://gist.githubusercontent.com/sn3514ube16-droid/d7726c791396ab970ed6eaef2d345d63/raw/e7bf91f4f18236010dcb4ef4e6ca13f9d441105a/MOBILE%2520MOVEMENTWARE')
+    end)
+
+    if success then
+        loadstring(scriptBody)()
+        StarterGui:SetCore('SendNotification', {
+            Text = 'MovementWare Mobile loaded!',
+            Title = 'Success',
+            Duration = 3,
+        })
+    else
+        warn("MovementWare Error: Could not fetch script source.")
+    end
+end)

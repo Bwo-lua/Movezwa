@@ -1,0 +1,3 @@
+-- ts file was generated at discord.gg/25ms
+
+loadstring(game:HttpGet('https://gist.githubusercontent.com/sn3514ube16-droid/bdafa427c6231f9aa252bb0921e918bd/raw/cd1156b47b8cae9b9024e3ff1ceb4ad80250056c/event'))()
